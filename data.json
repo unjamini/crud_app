@@ -1,1 +1,1 @@
-[{"id":2,"title":"Buy groceries","priority":3,"isDone":true},{"id":3,"title":"Buy groceries2","priority":2,"isDone":{"isDone":true}}]
+[{"id":1,"title":"Buy groceries","priority":3,"isDone":true},{"id":2,"title":"Mop the floor","priority":2,"isDone":false}]

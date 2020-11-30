@@ -33,7 +33,7 @@ router.get('/:id', m.mustBeInteger, async (req, res) => {
 router.post('/', m.checkFields, async (req, res) => {
     await todo.addTodo(req.body)
     .then(todo => res.status(201).json({
-        message: `The todo with ${todo.id} is added`,
+        message: `The todo ${todo.id} is added`,
         content: todo
     }))
     .catch(err => res.status(500).json({ message: err.message }))
@@ -41,7 +41,7 @@ router.post('/', m.checkFields, async (req, res) => {
 
 router.put('/:id', m.mustBeInteger, async (req, res) => {
     const id = req.params.id
-    await todo.updateTodo(id, req.body)
+    await todo.updateTodo(id, req.body.isDone)
     .then(todo => res.json({
         message: `The ${id} todo status is updated`,
         content: todo
