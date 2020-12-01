@@ -6,13 +6,13 @@
 1. Показать все задачи
 
 ```javascript
-curl -i -X GET http://localhost:1337/api/v1/todos
+curl -i -X GET http://localhost:1337/todos
 ```
  
 2. Найти задачу по id
 
 ```javascript
-curl -i -X GET http://localhost:1337/api/v1/1
+curl -i -X GET http://localhost:1337/todos/1
 ```
 
 3. Добавить новую задачу с названием и приоритетом
